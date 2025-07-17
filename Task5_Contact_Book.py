@@ -66,3 +66,5 @@ while True:
         break
     else:
         print("Invalid choice.")
+# This code implements a simple contact book application in Python.
+# It allows users to add, view, search, update, and delete contacts.
