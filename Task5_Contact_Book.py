@@ -7,12 +7,13 @@ def add_contact():
     address = input("Enter address: ")
     contacts.append({"name": name, "phone": phone, "email": email, "address": address})
     print("Contact added.")
-
+#To view contacts
 def view_contacts():
     print("\n--- Contact List ---")
     for i, contact in enumerate(contacts, 1):
         print(f"{i}. {contact['name']} - {contact['phone']}")
 
+#To search contacts
 def search_contact():
     keyword = input("Search by name or phone: ")
     for contact in contacts:
@@ -21,6 +22,7 @@ def search_contact():
             return
     print("Contact not found.")
 
+#To update contacts
 def update_contact():
     name = input("Enter the name of the contact to update: ")
     for contact in contacts:
@@ -32,6 +34,7 @@ def update_contact():
             return
     print("Contact not found.")
 
+#To delete contacts
 def delete_contact():
     name = input("Enter the name of the contact to delete: ")
     for i, contact in enumerate(contacts):
